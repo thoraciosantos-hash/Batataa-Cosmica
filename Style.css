@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background: linear-gradient(45deg, hotpink, cyan, limegreen, gold);
+  background-size: 800% 800%;
+  animation: bgMove 10s infinite linear;
+  color: #000;
+  overflow-x: hidden;
+}
+
+@keyframes bgMove {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+h1 {
+  text-align: center;
+  font-size: 4em;
+  text-shadow: 3px 3px 0 yellow, -3px -3px 0 fuchsia;
+  margin-top: 50px;
+  animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+.marquee {
+  font-size: 2em;
+  white-space: nowrap;
